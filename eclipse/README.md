@@ -72,13 +72,13 @@ General Text Editor Formatting
 2. Setup
  * Insert spaces for tabs: YES
  * Show print margin: YES
- * Print margin column: 128
+ * Print margin column: 120
 
 XML formatting
 --------------
 1. In Eclipse Preferences go to XML -> XML Files -> Editor
 2. Setup
- * Line width: 128
+ * Line width: 120
  * Split multiple attributes each on new line: NO
  * Align final bracked in multi-line element tags: NO
  * Preserve whitespace in tags with PCDATA content: NO
@@ -92,7 +92,7 @@ HTML formatting
 ---------------
 1. In Eclipse Preferences go to -> Web -> HTML Files -> Editor
 2. Setup
- * Line width: 128
+ * Line width: 120
  * Split multiple attributes each on new line: NO
  * Align final bracked in multi-line element tags: NO
  * Clear all blank lines: NO
@@ -106,7 +106,7 @@ CSS Formatting
 
 1. In Eclipse Preferences go to Web -> CSS Files -> Editor
 2. Setup
- * Line width: 128
+ * Line width: 120
  * Insert line break between properties: YES
  * Disable wrapping in style attribute of Html: YES
  * Indent using spaces
