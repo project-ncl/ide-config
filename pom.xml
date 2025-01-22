@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.jboss</groupId>
+        <artifactId>jboss-parent</artifactId>
+        <version>47</version>
+    </parent>
+
+    <groupId>org.jboss.pnc</groupId>
+    <artifactId>ide-config</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>PNC IDE Configuration</name>
+    <description>IDE Configuration Files</description>
+    <url>https://github.com/project-ncl/ide-config</url>
+    <scm>
+        <connection>scm:git:https://github.com/project-ncl/ide-config.git</connection>
+        <developerConnection>scm:git:git@github.com:project-ncl/ide-config.git</developerConnection>
+        <url>https://github.com/project-ncl/ide-config</url>
+        <tag>HEAD</tag>
+    </scm>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <jboss.releases.repo.id>sonatype-nexus-staging</jboss.releases.repo.id>
+        <jboss.releases.repo.url>https://oss.sonatype.org/service/local/staging/deploy/maven2</jboss.releases.repo.url>
+        <jboss.snapshots.repo.id>sonatype-nexus-snapshots</jboss.snapshots.repo.id>
+        <jboss.snapshots.repo.url>https://oss.sonatype.org/content/repositories/snapshots</jboss.snapshots.repo.url>
+
+    </properties>
+
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <configuration>
+                        <archive>
+                            <index>false</index>
+                        </archive>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>
