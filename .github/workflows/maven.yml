@@ -9,7 +9,8 @@ on:
   pull_request:
     branches: [ main ]
 
-jobs: build:
+jobs:
+  build:
     # https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#jobsjob_idif
     if: github.repository == 'project-ncl/ide-config' && github.event_name == 'pull_request'
     runs-on: ubuntu-latest
