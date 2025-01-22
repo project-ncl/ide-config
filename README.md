@@ -1,6 +1,10 @@
-JBoss Community IDE Configuration Files
+ProjectNCL IDE Configuration Files
 =======================================
-The directories below contain instructions, and IDE configuration files for eclipse, IDEA, and NetBeans.  See below for additional information.
+
+The directories below contain instructions and IDE configuration files for Eclipse.  See below for additional information.
+
+This was originally based upon https://github.com/jboss/ide-config
+
 
 IDE Agnostic Conventions
 ------------------------
@@ -19,15 +23,6 @@ IDE Agnostic Conventions
 * Spaces are used instead of tabs
 * Indentation size is 4
 
-Projects following these conventions
-------------------------------------
-
-* [JBoss-AS](https://github.com/jbossas)
-* [RichFaces](https://github.com/richfaces)
-* TODO
-
-If your JBoss project follows these conventions,
-[fork and edit this file](https://github.com/jboss/ide-config/edit/master/README.md) and add your project.
 
 
 # Intellij setup with the eclipse formatter xml
