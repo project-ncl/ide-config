@@ -3,7 +3,7 @@ ProjectNCL IDE Configuration Files
 
 The directories below contain instructions and IDE configuration files for Eclipse.  See below for additional information.
 
-This was originally based upon https://github.com/jboss/ide-config
+This was originally based upon https://github.com/jboss/ide-config and https://github.com/quarkusio/quarkus/blob/main/independent-projects/ide-config/src/main/resources/eclipse-format.xml
 
 
 IDE Agnostic Conventions
