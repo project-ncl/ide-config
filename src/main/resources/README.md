@@ -1,8 +1,6 @@
-JBoss IDE Configuration Files For Eclipse
+IDE Configuration Files For Eclipse
 =========================================
-The following instructions cover how to configure eclipse to use files and conventions to comply with JBoss coding standards.
-
-(version 3.7 used)
+The following instructions cover how to configure eclipse to use files and conventions to comply with coding standards.
 
 Java Formatter
 --------------
