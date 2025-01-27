@@ -52,6 +52,18 @@
                         </archive>
                     </configuration>
                 </plugin>
+                <plugin>
+                    <groupId>io.github.floverfelt</groupId>
+                    <artifactId>find-and-replace-maven-plugin</artifactId>
+                    <version>1.2.0</version>
+                    <configuration>
+                        <replacementType>file-contents</replacementType>
+                        <fileMask>.md</fileMask>
+                        <!-- Bit of hack as it is assuming this version is always 1.x -->
+                        <findRegex>&lt;version&gt;1.*&lt;/version&gt;</findRegex>
+                        <replaceValue>&lt;version&gt;${project.version}&lt;/version&gt;</replaceValue>
+                    </configuration>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
@@ -61,6 +73,24 @@
             <id>release</id>
             <build>
                 <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-release-plugin</artifactId>
+                        <version>2.5.3</version>
+                        <configuration>
+                            <preparationGoals>-Prelease clean find-and-replace:find-and-replace scm:checkin verify</preparationGoals>
+                            <completionGoals>-Prelease clean verify</completionGoals>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-scm-plugin</artifactId>
+                        <version>2.1.0</version>
+                        <configuration>
+                            <message>[maven-scm-plugin] Set ${project.version} version in README.md</message>
+                            <includes>README.md</includes>
+                        </configuration>
+                    </plugin>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
