@@ -58,9 +58,8 @@
                     <version>1.2.0</version>
                     <configuration>
                         <replacementType>file-contents</replacementType>
-                        <fileMask>.md</fileMask>
-                        <!-- Bit of hack as it is assuming this version is always 1.x -->
-                        <findRegex>&lt;version&gt;1.*&lt;/version&gt;</findRegex>
+                        <fileMask>.md</fileMask>d
+                        <findRegex>&lt;version&gt;[0-9].*&lt;/version&gt;</findRegex>
                         <replaceValue>&lt;version&gt;${project.version}&lt;/version&gt;</replaceValue>
                     </configuration>
                 </plugin>

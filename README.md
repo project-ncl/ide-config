@@ -95,10 +95,14 @@ Note that configuration for `impsort-maven-plugin` has also been added as its a 
 A typical pom could contain:
 
 ```
+<properties
+   <spotless-maven-plugin.version>2.44.2</spotless-maven-plugin.version>
+</properties>
+
 <plugin>
   <groupId>com.diffplug.spotless</groupId>
   <artifactId>spotless-maven-plugin</artifactId>
-  <version>2.44.2</version>
+  <version>${spotless-maven-plugin.version}</version>
   <dependencies>
     <dependency>
       <groupId>org.jboss.pnc</groupId>
@@ -110,7 +114,7 @@ A typical pom could contain:
     <java>
       <removeUnusedImports/>
       <importOrder>
-        <order>java,javax,jakarta,org,com</order>
+        <file>java-import-order.txt</file>
       </importOrder>
       <eclipse>
         <file>java-formatter.xml</file>
