@@ -61,7 +61,7 @@ A typical pom could contain:
     <dependency>
       <groupId>org.jboss.pnc</groupId>
       <artifactId>ide-config</artifactId>
-      <version>1.0.0</version>
+      <version>1.1.0</version>
     </dependency>
   </dependencies>
   <configuration>
@@ -107,7 +107,7 @@ A typical pom could contain:
     <dependency>
       <groupId>org.jboss.pnc</groupId>
       <artifactId>ide-config</artifactId>
-      <version>1.0.0</version>
+      <version>1.1.0</version>
     </dependency>
   </dependencies>
   <configuration>
