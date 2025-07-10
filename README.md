@@ -121,6 +121,11 @@ A typical pom could contain:
       </eclipse>
       <lineEndings>UNIX</lineEndings>
     </java>
+    <pom>
+      <sortPom>
+        <expandEmptyElements>false</expandEmptyElements>
+      </sortPom>
+    </pom>
   </configuration>
   <executions>
     <execution>
