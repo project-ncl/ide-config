@@ -64,14 +64,16 @@ A typical pom could contain:
   </dependencies>
   <configuration>
     <java>
-      <removeUnusedImports/>
-      <importOrder>
-        <file>java-import-order.txt</file>
-      </importOrder>
       <eclipse>
         <file>java-formatter.xml</file>
       </eclipse>
+      <importOrder>
+        <file>java-import-order.txt</file>
+      </importOrder>
       <lineEndings>UNIX</lineEndings>
+      <removeUnusedImports>
+        <engine>google-java-format</engine>
+      </removeUnusedImports>
     </java>
     <pom>
       <sortPom>
@@ -140,5 +142,3 @@ This option is deprecated as Spotless is preferred. However the configuration as
 Note that configuration for `impsort-maven-plugin` has also been added as its a common extra with `formatter-maven-plugin`.
 
 </details>
-
-
