@@ -71,9 +71,7 @@ A typical pom could contain:
         <file>java-import-order.txt</file>
       </importOrder>
       <lineEndings>UNIX</lineEndings>
-      <removeUnusedImports>
-        <engine>google-java-format</engine>
-      </removeUnusedImports>
+      <removeUnusedImports/>
     </java>
     <pom>
       <sortPom>
